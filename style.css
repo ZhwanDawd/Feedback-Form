@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color:#f7e4c142 ;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    max-width: 700px; 
+    height: auto; 
+    max-height: 95vh; 
+    justify-content: center;
+    padding: 1.5rem 2em;
+   /*  border: 3px solid #dba8ac69; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px #02394a81;
+    background-color: #ffffff;
+    overflow-y: auto; /* Enable vertical scrolling */ 
+}
+
+.container .container-input {
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color:#02394a ;
+    padding-top:1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #9CAFB7;
+}
+
+.input {
+    margin-bottom: 20px;
+    display:block;
+    align-items: center;
+    align-content: center;
+}
+
+.input input {
+    width: 50%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #C57B57;
+    border-radius: 10px;
+    transition: white 0.3s;
+}
+
+input::placeholder{
+    color: #c57c579d;
+}
+
+.input input:focus {
+    border-radius: 0%;
+    border-color: #9CAFB7;
+    outline: none;
+}
+
+.input input:focus::placeholder {
+    color: #02394A; /* Change placeholder color when input is focused */
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse; /* Change from right to left to left to right */
+    justify-content: space-around;
+    gap: 25px;
+    align-content: center;
+    border: none;
+    margin-top: 15px;
+}
+
+.rating input {
+    display: none;
+    text-align: center;
+}
+
+.rating label {
+   padding-bottom: 2em;
+    cursor: pointer;
+    font-size: 40px; /* Adjust size as needed */
+    color: #b4b4b477;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.rating input:checked + label,
+.rating input:checked + label ~ label {
+    color: #02394ad7; 
+}
+
+
+.success-message {
+    background-color: #d4edda; 
+    color: #155724; 
+    font-weight: 500;
+    width: 50%; /* Adjust width as needed */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #02394A; 
+    padding: 10px 15px; 
+    margin-left: 8em;
+    margin-top:5em; /* Adjust margin for centering */
+    border-radius: 5px; 
+}
+
+.text{
+    display: inline;
+    margin: 17px 0 ;
+    padding-top: 1em;
+    color:#02394A ;
+    font-size: 20px;
+    font-weight: 590;
+}
+
+h3 {
+    color:#42535a ;
+    padding-top: 0.5em;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    margin-bottom: 10px;
+    margin-left: 5%; /* Adjust margin as needed */
+    width: 90%; /* Adjust width as needed */
+    align-content: center;
+    justify-content: center;
+}
+
+.input-container textarea {
+    width: 75%; /* Adjust width as needed */
+    padding: 10px;
+    padding-left: 3em;
+    border: 2px solid #C57B57;
+    border-radius: 10px;
+    position: relative; /* Make the textarea a positioning context */
+}
+
+.input-container textarea:focus{
+    border-radius: 0%;
+    border-color: #9CAFB7;
+    outline: none;
+}
+
+.input-container textarea:focus::placeholder {
+    color: #02394A; /* Change placeholder color when input is focused */
+}
+
+
+textarea::placeholder{
+    color: #c57c579d;
+}
+
+.message-icon {
+    position: absolute;
+    left:18%;
+    top: 28%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: auto;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    width: 35%; /* Adjust width as needed */
+    padding: 10px 20px; 
+    margin: 0.5rem ; 
+    font-weight: bold;
+    border: 1.5px solid #2576A3;
+    border-radius: 10px;
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+button[type="submit"] {
+    background-color: #02394A;
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+button[type="reset"] {
+    background-color: #9CAFB7;
+    margin-bottom: 1.5em;
+    outline: none;
+    color: #fff;
+}
+
+button[type="reset"]:hover,
+button[type="submit"]:hover {
+    opacity: 0.8;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Feedback Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-input">
+            <h2>Give Your Feedback</h2>
+        <p>We appreciate your feedback. <br> Thank you for contributing to our <br> continuous imptovment</p>
+
+        <div class="input">
+            <input type="text" name="name"  id="fullName" placeholder="Enter Your Full Name" required> 
+            <input type="tel" name="phone"   id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Enter your Phone Number">
+            <input type="email" name="email" id="email" pattern=".+@example\.com" size="30" placeholder="Enter Your Email">
+            <div class="rating">
+                <span class="text">High</span>
+                <div>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+                    </div>
+                    
+                </div>
+                <span class="text">Low</span>
+            </div>
+            
+            <h3>Any more thoughts to share?</h3>
+            <div>
+                <div class="left-inner-addon input-container">
+                    <textarea class="feedback" placeholder="Enter Your Feedback" required></textarea>
+                    <img src="./message.png" alt="" class="message-icon">
+                </div>
+            </div>
+            <div class="buttons">
+           <!--  <input type="button" value="Cancel">
+            <input type="submit" value="Submit" onclick="submitForm()"> -->
+            <button type="submit" onclick="submitForm()">Submit</button>
+            <button type="reset" onclick="resetForm()">Cancel</button>
+           
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
